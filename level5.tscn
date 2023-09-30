@@ -1,0 +1,201 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://RigtExitLong.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Faucet.tscn" type="PackedScene" id=2]
+[ext_resource path="res://RigtExit.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Cup.tscn" type="PackedScene" id=4]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 554, 316 )
+current = true
+zoom = Vector2( 2, 2 )
+
+[node name="FaucetNode" parent="." instance=ExtResource( 2 )]
+position = Vector2( 543, 64 )
+
+[node name="Exit7" parent="." instance=ExtResource( 3 )]
+position = Vector2( 396, 398 )
+
+[node name="Exit9" parent="." instance=ExtResource( 3 )]
+position = Vector2( 640, 501 )
+scale = Vector2( -1, 1 )
+
+[node name="Exit8" parent="." instance=ExtResource( 3 )]
+position = Vector2( 554, 501 )
+
+[node name="Exit5" parent="." instance=ExtResource( 3 )]
+position = Vector2( 501, 397 )
+
+[node name="Exit6" parent="." instance=ExtResource( 3 )]
+position = Vector2( 627, 386 )
+
+[node name="Exit3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 563, 119 )
+
+[node name="Exit4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 523, 119 )
+scale = Vector2( -1, 1 )
+
+[node name="Cup12" parent="." instance=ExtResource( 4 )]
+position = Vector2( 762, 441 )
+
+[node name="Cup4" parent="." instance=ExtResource( 4 )]
+position = Vector2( 607, 339 )
+
+[node name="Pipe4" parent="Cup4" index="1"]
+position = Vector2( 20, 62 )
+scale = Vector2( 1, 1 )
+
+[node name="Pipe6" parent="Cup4" index="3"]
+position = Vector2( 20, 31 )
+scale = Vector2( 1, 31 )
+
+[node name="Cup8" parent="." instance=ExtResource( 4 )]
+position = Vector2( 660, 451 )
+
+[node name="Pipe5" parent="Cup8" index="2"]
+position = Vector2( -20, 61 )
+scale = Vector2( 1, 2 )
+
+[node name="Pipe7" parent="Cup8" index="4"]
+position = Vector2( -20, 21 )
+scale = Vector2( 1, 21 )
+
+[node name="Cup9" parent="." instance=ExtResource( 4 )]
+position = Vector2( 534, 451 )
+
+[node name="Pipe4" parent="Cup9" index="1"]
+position = Vector2( 20, 61 )
+scale = Vector2( 1, 2 )
+
+[node name="Pipe6" parent="Cup9" index="3"]
+position = Vector2( 20, 21.5 )
+scale = Vector2( 1, 21.5 )
+
+[node name="Cup10" parent="." instance=ExtResource( 4 )]
+position = Vector2( 429, 451 )
+
+[node name="Cup11" parent="." instance=ExtResource( 4 )]
+position = Vector2( 597, 579 )
+
+[node name="Cup5" parent="." instance=ExtResource( 4 )]
+position = Vector2( 710, 334 )
+
+[node name="Pipe4" parent="Cup5" index="1"]
+position = Vector2( 20, 62 )
+scale = Vector2( 1, 0.99999 )
+
+[node name="Pipe6" parent="Cup5" index="3"]
+position = Vector2( 20, 22.5 )
+scale = Vector2( 1, 22.5 )
+
+[node name="Cup6" parent="." instance=ExtResource( 4 )]
+position = Vector2( 481, 345 )
+
+[node name="Pipe4" parent="Cup6" index="1"]
+position = Vector2( 20, 62 )
+scale = Vector2( 1, 0.999999 )
+
+[node name="Pipe6" parent="Cup6" index="3"]
+position = Vector2( 20, 22.5 )
+scale = Vector2( 1, 22.5 )
+
+[node name="Cup7" parent="." instance=ExtResource( 4 )]
+position = Vector2( 376, 346 )
+
+[node name="Pipe4" parent="Cup7" index="1"]
+position = Vector2( 20, 62 )
+scale = Vector2( 1, 0.999999 )
+
+[node name="Pipe6" parent="Cup7" index="3"]
+position = Vector2( 20, 22.5 )
+scale = Vector2( 1, 22.5 )
+
+[node name="Cup3" parent="." instance=ExtResource( 4 )]
+position = Vector2( 543, 77 )
+
+[node name="Pipe4" parent="Cup3" index="1"]
+position = Vector2( 20, 57 )
+scale = Vector2( 1, 6 )
+
+[node name="Pipe5" parent="Cup3" index="2"]
+position = Vector2( -20, 57 )
+scale = Vector2( 1, 6 )
+
+[node name="Pipe6" parent="Cup3" index="3"]
+position = Vector2( 20, 17.5 )
+scale = Vector2( 1, 17.5 )
+
+[node name="Pipe7" parent="Cup3" index="4"]
+position = Vector2( -20, 17.5 )
+scale = Vector2( 1, 17.5 )
+
+[node name="cup2exits" type="Node2D" parent="."]
+
+[node name="Exit5" parent="cup2exits" instance=ExtResource( 3 )]
+position = Vector2( 448, 288 )
+
+[node name="Exit6" parent="cup2exits" instance=ExtResource( 3 )]
+position = Vector2( 408, 290 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Cup4" parent="cup2exits" instance=ExtResource( 4 )]
+position = Vector2( 428, 240 )
+
+[node name="Pipe4" parent="cup2exits/Cup4" index="1"]
+position = Vector2( 20, 60 )
+scale = Vector2( 1, 2.99999 )
+
+[node name="Pipe5" parent="cup2exits/Cup4" index="2"]
+position = Vector2( -20, 61 )
+scale = Vector2( 1, 2 )
+
+[node name="Pipe6" parent="cup2exits/Cup4" index="3"]
+position = Vector2( 20, 20 )
+scale = Vector2( 1, 20 )
+
+[node name="Pipe7" parent="cup2exits/Cup4" index="4"]
+position = Vector2( -20, 30.5 )
+scale = Vector2( 1, 30.5 )
+
+[node name="cup2exits2" type="Node2D" parent="."]
+position = Vector2( 231, 0 )
+
+[node name="Exit5" parent="cup2exits2" instance=ExtResource( 3 )]
+position = Vector2( 448, 279 )
+
+[node name="Exit7" parent="cup2exits2" instance=ExtResource( 3 )]
+position = Vector2( 499, 386 )
+
+[node name="Exit6" parent="cup2exits2" instance=ExtResource( 3 )]
+position = Vector2( 408, 288 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+
+[node name="Cup4" parent="cup2exits2" instance=ExtResource( 4 )]
+position = Vector2( 428, 240 )
+
+[node name="Pipe4" parent="cup2exits2/Cup4" index="1"]
+position = Vector2( 20, 55.5 )
+scale = Vector2( 1, 7.49999 )
+
+[node name="Pipe5" parent="cup2exits2/Cup4" index="2"]
+position = Vector2( -20, 60 )
+scale = Vector2( 1, 2.99999 )
+
+[node name="Pipe7" parent="cup2exits2/Cup4" index="4"]
+position = Vector2( -20, 19.5 )
+scale = Vector2( 1, 19.5 )
+
+[editable path="Cup4"]
+[editable path="Cup8"]
+[editable path="Cup9"]
+[editable path="Cup5"]
+[editable path="Cup6"]
+[editable path="Cup7"]
+[editable path="Cup3"]
+[editable path="cup2exits/Cup4"]
+[editable path="cup2exits2/Cup4"]

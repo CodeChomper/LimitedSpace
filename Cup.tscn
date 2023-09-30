@@ -1,0 +1,54 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Pipe.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scripts/Cup.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 21, 20 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 17, 2.5 )
+
+[node name="Cup" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Pipe" parent="." instance=ExtResource( 1 )]
+position = Vector2( -7.15256e-07, 63 )
+scale = Vector2( 21, 1 )
+
+[node name="Pipe4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 20, 47.5 )
+scale = Vector2( 1, 15.5 )
+
+[node name="Pipe5" parent="." instance=ExtResource( 1 )]
+position = Vector2( -20, 47.5 )
+scale = Vector2( 1, 15.5 )
+
+[node name="Pipe6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 20, 16 )
+scale = Vector2( 1, 16 )
+
+[node name="Pipe7" parent="." instance=ExtResource( 1 )]
+position = Vector2( -20, 16 )
+scale = Vector2( 1, 16 )
+
+[node name="ClickZone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClickZone"]
+position = Vector2( 0, 44 )
+shape = SubResource( 1 )
+
+[node name="FillLine" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FillLine"]
+position = Vector2( 0, 19.5 )
+shape = SubResource( 2 )
+
+[node name="SwitchLevel" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="input_event" from="ClickZone" to="." method="_on_Area2D_input_event"]
+[connection signal="body_entered" from="FillLine" to="." method="_on_FillLine_body_entered"]
+[connection signal="body_exited" from="FillLine" to="." method="_on_FillLine_body_exited"]
+[connection signal="timeout" from="SwitchLevel" to="." method="_on_SwitchLevel_timeout"]
