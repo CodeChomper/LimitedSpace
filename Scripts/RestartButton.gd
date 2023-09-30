@@ -19,3 +19,6 @@ func _ready():
 func _on_Button_pressed():
 	LevelManager.start_over()
 	pass # Replace with function body.
+
+func _try_again():
+	LevelManager.try_again()

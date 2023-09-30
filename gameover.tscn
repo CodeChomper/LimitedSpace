@@ -27,4 +27,4 @@ theme = ExtResource( 1 )
 text = "Try Again"
 script = ExtResource( 2 )
 
-[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_Button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_try_again"]
