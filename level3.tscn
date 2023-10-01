@@ -86,10 +86,10 @@ position = Vector2( 563, 135 )
 position = Vector2( 678, 300 )
 
 [node name="Cup6" parent="." instance=ExtResource( 1 )]
-position = Vector2( 606, 349 )
+position = Vector2( 606, 357 )
 
 [node name="Cup7" parent="." instance=ExtResource( 1 )]
-position = Vector2( 710, 349 )
+position = Vector2( 710, 358 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 553, 253 )

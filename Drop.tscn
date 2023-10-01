@@ -7,6 +7,7 @@
 radius = 1.0
 
 [node name="Droplet" type="RigidBody2D"]
+mass = 9.98
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -35,5 +35,5 @@ common/enable_pause_aware_picking=true
 
 quality/driver/driver_name="GLES2"
 quality/intended_usage/framebuffer_allocation=0
-environment/default_clear_color=Color( 0.121569, 0.439216, 0.513726, 1 )
+environment/default_clear_color=Color( 0.0980392, 0.32549, 0.380392, 1 )
 environment/default_environment="res://default_env.tres"

@@ -28,7 +28,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	timeDelta = timeDelta + delta
-	if timeDelta > 0.015:
+	if timeDelta > 0.01:
 		timeDelta = 0
 		var drop = dropscene.instance()
 		var xSpeed = randy.randf_range(-1,1)

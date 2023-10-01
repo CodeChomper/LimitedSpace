@@ -41,7 +41,7 @@ shape = SubResource( 1 )
 [node name="FillLine" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="FillLine"]
-position = Vector2( 0, 19.5 )
+position = Vector2( 0, 10 )
 shape = SubResource( 2 )
 
 [node name="SwitchLevel" type="Timer" parent="."]

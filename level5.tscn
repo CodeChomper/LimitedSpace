@@ -52,6 +52,9 @@ scale = Vector2( 1, 1 )
 position = Vector2( 20, 31 )
 scale = Vector2( 1, 31 )
 
+[node name="CollisionShape2D" parent="Cup4/FillLine" index="0"]
+position = Vector2( 0, 16 )
+
 [node name="Cup8" parent="." instance=ExtResource( 4 )]
 position = Vector2( 660, 451 )
 
